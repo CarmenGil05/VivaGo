@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4faff;
+}
+
+/* Cabecera */
+header {
+  background-color: #cbeeff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0088cc;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: #336699;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Formulario de viaje */
+.prepare-trip {
+  background-color: #00aeff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.prepare-trip form input,
+.prepare-trip form button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.prepare-trip button {
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Razones */
+.why-vivago {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  background: #ccc;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ofertas */
+.offers {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.offer {
+  background: #00aeff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 20%;
+  border-radius: 8px;
+}
+
+/* Carrusel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.carousel-track {
+  background: #00aeff;
+  color: white;
+  padding: 40px;
+  width: 60%;
+  text-align: center;
+}
+
+.prev,
+.next {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Testimonios */
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.testimonial {
+  background: #00aeff;
+  color: white;
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 8px;
+}
