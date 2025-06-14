@@ -1,26 +1,28 @@
 // Carrusel simple funcional
-let currentSlide = 0;
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
 
-const carousel = document.querySelector(".carousel-track");
-const slides = ["Tour 1", "Tour 2", "Tour 3"];
+  let currentIndex = 0;
 
-function updateCarousel() {
-  carousel.textContent = slides[currentSlide];
-}
+  function updateCarousel() {
+    const slideWidth = slides[0].clientWidth;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
 
-// Botones
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
 
-nextBtn.addEventListener("click", () => {
-  currentSlide = (currentSlide + 1) % slides.length;
-  updateCarousel();
-});
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  });
 
-prevBtn.addEventListener("click", () => {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  updateCarousel();
-});
+  // Opcional: auto-play
+  // setInterval(() => {
+  //   nextBtn.click();
+  // }, 5000);
 
-// Inicializar carrusel
-updateCarousel();

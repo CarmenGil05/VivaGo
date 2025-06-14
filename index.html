@@ -15,66 +15,148 @@
 <div class="logo">
   <img src="img/logo.png" alt="Logo VivaGO" class="logo-icon">
 </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Menú</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
+    <nav class="navbar sticky">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Tour</a></li>
+    <li><a href="#">Menú</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
       </div>
   </header>
 
   <!-- Sección de preparación del viaje -->
-  <section class="prepare-trip">
+  <section class="prepara-viaje-container">
+  <div class="prepara-viaje-card">
     <h2>Prepara tu viaje!</h2>
-    <form>
-      <input type="text" placeholder="Destino">
-      <input type="date">
-      <input type="number" placeholder="Personas">
+    <form class="viaje-form">
+      <input type="text" placeholder="Destino" required>
+      <input type="date" placeholder="Fecha de salida" required>
+      <input type="number" placeholder="Número de viajeros" required>
       <button type="submit">Reserva ahora!</button>
     </form>
-  </section>
+  </div>
+</section>
 
-  <!-- Razones para elegir VivaGo -->
-  <section class="why-vivago">
-    <h2>¿Por qué elegir VivaGo?</h2>
-    <div class="icons">
-      <div class="icon">Icono 1</div>
-      <div class="icon">Icono 2</div>
-      <div class="icon">Icono 3</div>
+
+<!-- Razones para elegir VivaGO -->
+<section class="why-vivago">
+  <h2>¿Por qué elegir VivaGO?</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="icon">✈️</div>
+      <h3>Viajes personalizados</h3>
+      <p>Crea tu aventura a medida con destinos y actividades que se adaptan a ti.</p>
     </div>
-  </section>
+    <div class="feature">
+      <div class="icon">💰</div>
+      <h3>Precios competitivos</h3>
+      <p>Aprovecha nuestras ofertas exclusivas y reserva al mejor precio garantizado.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">⭐</div>
+      <h3>Clientes satisfechos</h3>
+      <p>Cientos de viajeros nos recomiendan por nuestro trato cercano y profesionalidad.</p>
+    </div>
+  </div>
+</section>
+
 
   <!-- Ofertas de viaje -->
-  <section class="offers">
-    <div class="offer">Oferta viaje 1</div>
-    <div class="offer">Oferta viaje 2</div>
-    <div class="offer">Oferta viaje 3</div>
-    <div class="offer">Oferta viaje 4</div>
-  </section>
+<section class="offers">
+  <h2>Ofertas destacadas</h2>
+  <div class="offer-grid">
 
-  <!-- Carrusel de tours -->
-  <section class="carousel">
-    <button class="prev">❮</button>
-    <div class="carousel-track">Carrusel de tours</div>
-    <button class="next">❯</button>
-  </section>
+    <div class="offer-card">
+      <img src="img/viajes/viaje_costa.jpg" alt="Viaje a la playa">
+      <div class="offer-info">
+        <h3>Escapada a la Costa</h3>
+        <p>3 noches con todo incluido desde 199€</p>
+        <button>Ver oferta</button>
+      </div>
+    </div>
 
-  <!-- Testimonios de viajeros -->
-  <section class="testimonials">
+    <div class="offer-card">
+      <img src="img/viajes/viaje_montana.jpg" alt="Viaje a la montaña">
+      <div class="offer-info">
+        <h3>Aventura en la montaña</h3>
+        <p>Senderismo y relax desde 149€</p>
+        <button>Ver oferta</button>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="img/viajes/tour_europa.png" alt="Viaje a ciudad europea">
+      <div class="offer-info">
+        <h3>Tour por Europa</h3>
+        <p>5 ciudades en 7 días desde 499€</p>
+        <button>Ver oferta</button>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="img/viajes/viaje_playa.jpg" alt="Viaje exótico">
+      <div class="offer-info">
+        <h3>Destino exótico</h3>
+        <p>Islas paradisíacas desde 899€</p>
+        <button>Ver oferta</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Carrusel de tours -->
+<section class="carousel">
+  <button class="carousel-btn prev">❮</button>
+
+  <div class="carousel-track">
+    <div class="carousel-slide">
+      <img src="img/viajes/viaje_costa.jpg" alt="Tour Playa">
+      <div class="caption">Tour a la Costa – 3 días desde 199€</div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/viajes/viaje_montana.jpg" alt="Tour Montaña">
+      <div class="caption">Aventura en la Montaña – desde 149€</div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/viajes/tour_europa.png" alt="Tour Europa">
+      <div class="caption">Europa en 7 días – desde 499€</div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/viajes/viaje_playa.jpg" alt="Tour Exótico">
+      <div class="caption">Escapada exótica – desde 899€</div>
+    </div>
+  </div>
+
+  <button class="carousel-btn next">❯</button>
+</section>
+
+
+ <!-- Testimonios de viajeros -->
+<section class="testimonials">
+  <h2 class="testimonial-title">Lo que opinan nuestros viajeros</h2>
+
+  <div class="testimonial-list">
     <div class="testimonial">
-      <h3>Testimonio de los viajeros 1</h3>
-      <p>Viajero 1</p>
+      <img src="img/clientes/cliente1.jpg" alt="Cliente 1">
+      <h3>Ana Rodríguez</h3>
+      <p>"Una experiencia increíble. Todo fue perfecto desde la reserva hasta el final del viaje."</p>
       <p>⭐⭐⭐⭐⭐</p>
     </div>
+
     <div class="testimonial">
-      <h3>Testimonio de los viajeros 2</h3>
-      <p>Viajero 2</p>
+      <img src="img/clientes/cliente2.jpg" alt="Cliente 2">
+      <h3>Mario Fernández</h3>
+      <p>"El trato fue excelente y los destinos superaron mis expectativas. ¡Muy recomendable!"</p>
       <p>⭐⭐⭐⭐⭐</p>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <script src="script.js"></script>
 </body>
