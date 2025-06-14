@@ -142,7 +142,6 @@ header {
 
 /* Razones */
 .why-vivago {
-  background-color: #f5f5f5;
   padding: 5px 0px;
   text-align: center;
 }
@@ -321,10 +320,8 @@ header {
 /* Testimonios */
 .testimonials {
   padding: 40px 20px;
-  background-color: #f0f8ff;
   text-align: center;
 }
-
 
 .testimonials h2 {
   width: 100%;
@@ -333,7 +330,6 @@ header {
   color: #0077cc;
   margin-bottom: 30px;
 }
-
 
 .testimonial {
   background-color: white;
