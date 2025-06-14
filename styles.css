@@ -346,7 +346,6 @@ display: flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 .testimonial img {
   width: 80px;
