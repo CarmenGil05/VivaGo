@@ -1,32 +1,30 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4faff;
+  font-family: Arial, sans-serif; /* Fuente principal */
+  margin: 0; /* Sin margen por defecto */
+  background-color: #f4faff; /* Fondo azul claro */
 }
 
 /* Cabecera */
-
 header {
-  background: linear-gradient(rgba(255, 255, 255, 0.651), rgba(255, 255, 255, 0.425)), url('img/header-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  align-items: center;
-  justify-content: center;
-
+  background: linear-gradient(rgba(255, 255, 255, 0.651), rgba(255, 255, 255, 0.425)), url('img/header-bg.jpg'); /* Degradado + imagen de fondo */
+  background-size: cover; /* Cubrir todo el espacio */
+  background-position: center; /* Centrado */
+  background-repeat: no-repeat; /* Sin repetición */
+  color: white; /* Texto blanco */
+  align-items: center; /* Centrado vertical (no afecta si no es flex) */
+  justify-content: center; /* Centrado horizontal (igual que arriba) */
 }
 
 .header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Layout flexbox */
+  flex-direction: column; /* En columna */
+  align-items: center; /* Centrar elementos */
 }
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items: center; /* Centrar verticalmente */
 }
 
 .logo-icon {
@@ -34,36 +32,34 @@ header {
   height: 400px;
 }
 
-
 /* Estilo general del nav */
 .navbar {
-   position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.479); 
-  backdrop-filter: blur(4px);
-  width: 100%;
+  position: sticky; /* Se queda fijo al hacer scroll */
+  top: 0; /* Posición arriba */
+  z-index: 1000; /* Encima de otros elementos */
+  background-color: rgba(0, 0, 0, 0.479); /* Fondo semitransparente */
+  backdrop-filter: blur(4px); /* Desenfoque fondo detrás */
+  width: 100%; /* Ancho completo */
 }
-
 
 /* Lista horizontal */
 .navbar ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  display: flex; /* Mostrar elementos en línea */
+  justify-content: center; /* Centrar elementos */
+  list-style: none; /* Sin viñetas */
   margin: 0;
   padding: 10px 0;
-  gap: 30px;
+  gap: 30px; /* Separación entre elementos */
 }
 
 /* Enlaces como barra, sin fondo tipo botón */
 .navbar a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none; /* Sin subrayado */
+  color: white; /* Texto blanco */
   font-weight: bold;
   font-size: 16px;
   padding: 8px 0;
-  position: relative;
+  position: relative; /* Para posicionar el ::after */
 }
 
 /* Subrayado al pasar el ratón (estilo limpio) */
@@ -74,22 +70,21 @@ header {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background-color: white;
-  transform: scaleX(0);
+  background-color: white; /* Línea blanca */
+  transform: scaleX(0); /* Oculto inicialmente */
   transform-origin: right;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Animación suave */
 }
 
 .navbar a:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(1); /* Mostrar línea al pasar ratón */
   transform-origin: left;
 }
-
 
 /* Formulario de viaje */
 /* Contenedor general centrado */
 .prepara-viaje-container {
-  display: flex;
+  display: flex; /* Flex para centrar */
   justify-content: center;
   align-items: center;
   background-color: #00aaff; /* Fondo azul claro */
@@ -98,10 +93,10 @@ header {
 
 /* Tarjeta principal */
 .prepara-viaje-card {
-  background-color: white;
+  background-color: white; /* Fondo blanco */
   padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
   max-width: 500px;
   width: 100%;
   text-align: center;
@@ -110,34 +105,34 @@ header {
 /* Estilo del título */
 .prepara-viaje-card h2 {
   margin-bottom: 20px;
-  color: #0077cc;
+  color: #0077cc; /* Azul */
 }
 
 /* Formulario dentro de la tarjeta */
 .viaje-form {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-direction: column; /* Inputs en columna */
+  gap: 15px; /* Separación */
 }
 
 /* Inputs y botón */
 .viaje-form input,
 .viaje-form button {
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 6px; /* Bordes redondeados */
   font-size: 16px;
 }
 
 .viaje-form button {
-  background-color: orange;
+  background-color: orange; /* Fondo naranja */
   color: white;
   border: none;
-  cursor: pointer;
+  cursor: pointer; /* Mano al pasar */
 }
 
 .viaje-form button:hover {
-  background-color: rgba(245, 147, 18, 0.712);
+  background-color: rgba(245, 147, 18, 0.712); /* Cambio de color al hover */
 }
 
 /* Razones */
@@ -148,14 +143,14 @@ header {
 
 .why-vivago h2 {
   font-size: 28px;
-  color: #175581;
+  color: #175581; /* Azul oscuro */
   margin-bottom: 30px;
 }
 
 .features {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Que salte a otra línea si hace falta */
   gap: 30px;
 }
 
@@ -175,12 +170,12 @@ header {
 .feature h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #333;
+  color: #333; /* Gris oscuro */
 }
 
 .feature p {
   font-size: 13px;
-  color: #555;
+  color: #555; /* Gris medio */
 }
 
 .offers {
@@ -190,16 +185,16 @@ header {
 
 .offers h2 {
   font-size: 28px;
-  color: #0077cc;
+  color: #0077cc; /* Azul */
   margin-bottom: 30px;
 }
 
 .offer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive */
   gap: 30px;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centrado */
 }
 
 .offer-card {
@@ -211,13 +206,13 @@ header {
 }
 
 .offer-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Sube al pasar ratón */
 }
 
 .offer-card img {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  object-fit: cover; /* Recorta para cubrir */
 }
 
 .offer-info {
@@ -247,9 +242,8 @@ header {
 }
 
 .offer-info button:hover {
-  background-color: #005fa3;
+  background-color: #005fa3; /* Azul más oscuro */
 }
-
 
 /* Carrusel */
 .carousel {
@@ -257,33 +251,33 @@ header {
   width: 90%;
   max-width: 900px;
   margin: 50px auto;
-  overflow: hidden;
+  overflow: hidden; /* Oculta lo que sobresale */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: #fff; /* Fondo blanco */
 }
 
 .carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+  display: flex; /* En línea para animar con transform */
+  transition: transform 0.5s ease-in-out; /* Animación suave */
 }
 
 .carousel-slide {
-  min-width: 100%;
+  min-width: 100%; /* Ocupa todo el ancho */
   position: relative;
 }
 
 .carousel-slide img {
   width: 100%;
   height: 350px;
-  object-fit: cover;
+  object-fit: cover; /* Cubrir sin deformar */
   display: block;
 }
 
 .caption {
   position: absolute;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5); /* Fondo semitransparente */
   color: white;
   width: 100%;
   padding: 10px;
@@ -294,27 +288,27 @@ header {
 .carousel-btn {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Centrar verticalmente */
   background-color: rgba(0,0,0,0.4);
   color: white;
   border: none;
   font-size: 30px;
   padding: 10px 15px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 10; /* Encima de todo */
   transition: background-color 0.3s;
 }
 
 .carousel-btn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Más oscuro al pasar ratón */
 }
 
 .carousel-btn.prev {
-  left: 10px;
+  left: 10px; /* Botón anterior a la izquierda */
 }
 
 .carousel-btn.next {
-  right: 10px;
+  right: 10px; /* Botón siguiente a la derecha */
 }
 
 /* Testimonios */
@@ -333,29 +327,32 @@ header {
 
 .testimonial {
   background-color: white;
-  max-width: 200px;
-  margin: 20px auto;
+  width: 280px; 
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0; 
 }
+
 .testimonial-list {
-  display: flex;
+  display: flex; /* En fila */
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* Que pase a la siguiente fila si falta espacio */
   gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto; /* Centrado */
 }
 
 .testimonial img {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50%; /* Circular */
   margin-bottom: 15px;
-  border: 3px solid #00aacc;
+  border: 3px solid #00aacc; /* Borde azul */
 }
 
 .testimonial h3 {
@@ -369,4 +366,3 @@ display: flex;
   color: #555;
   margin: 5px 0;
 }
-
