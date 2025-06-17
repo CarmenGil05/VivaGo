@@ -151,7 +151,7 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* Que salte a otra línea si hace falta */
-  gap: 30px;
+  gap: 45px;
 }
 
 .feature {
@@ -341,7 +341,7 @@ header {
   display: flex; /* En fila */
   justify-content: center;
   flex-wrap: wrap; /* Que pase a la siguiente fila si falta espacio */
-  gap: 20px;
+  gap: 45px;
   max-width: 1000px;
   margin: 0 auto; /* Centrado */
 }
@@ -366,3 +366,41 @@ header {
   color: #555;
   margin: 5px 0;
 }
+
+/* Quienes somos */
+.quienes_somos {
+  padding: 40px 20px;
+  text-align: center;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienesomos {
+  background-color: rgb(253, 253, 253);
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgb(155, 230, 248);
+  align-items: center;
+  justify-content: center;
+}
+
+.quienesomos-title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #0077cc;
+  margin-bottom: 30px;
+}
+
+.quienesomos h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #0077cc;
+  margin-bottom: 30px;
+}
+
+
+
