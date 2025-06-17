@@ -11,7 +11,6 @@ header {
   background-size: cover; /* Cubrir todo el espacio */
   background-position: center; /* Centrado */
   background-repeat: no-repeat; /* Sin repetición */
-  color: white; /* Texto blanco */
   align-items: center; /* Centrado vertical (no afecta si no es flex) */
   justify-content: center; /* Centrado horizontal (igual que arriba) */
 }
@@ -341,7 +340,7 @@ header {
   display: flex; /* En fila */
   justify-content: center;
   flex-wrap: wrap; /* Que pase a la siguiente fila si falta espacio */
-  gap: 45px;
+  gap: 30px;
   max-width: 1000px;
   margin: 0 auto; /* Centrado */
 }
